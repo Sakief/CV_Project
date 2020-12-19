@@ -1,0 +1,11 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+Welcome to Fieldbuzz application system
+{% for message in messages %}
+<p id="messages">{{message}}</p>
+{% endfor %}
+{% endblock %}
+
